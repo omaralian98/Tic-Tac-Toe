@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Try to beat this Algorithm in a Tic Tac Toe match" />
+    <title>Mr_Sure21</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="JavaScript.js"></script>
+    <header>
+        <div id="title">Tic Tac Toe</div>
+    </header>
+</head>
+    <body>            
+        <div id="cont">
+            <div id="game">
+                <canvas id="playground"></canvas>
+                <div id="choosedif">
+                    <button class="choosegamemode" onclick="Choose('x', this)">1vs1</button>
+                    <button class="choosegamemode" onclick="Choose('o', this)">Practice</button>
+                </div>
+                <table>
+                    <tr id="r1">
+                        <th id="b1" onclick="DrawHtml(1)"><canvas></canvas></th>
+                        <th id="b2" onclick="DrawHtml(2)"><canvas></canvas></th>
+                        <th id="b3" onclick="DrawHtml(3)"><canvas></canvas></th>
+                    </tr>
+                    <tr id="r2">
+                        <th id="b4" onclick="DrawHtml(4)"><canvas></canvas></th>
+                        <th id="b5" onclick="DrawHtml(5)"><canvas></canvas></th>
+                        <th id="b6" onclick="DrawHtml(6)"><canvas></canvas></th>
+                    </tr>
+                    <tr id="r3">
+                        <th id="b7" onclick="DrawHtml(7)"><canvas></canvas></th>
+                        <th id="b8" onclick="DrawHtml(8)"><canvas></canvas></th>
+                        <th id="b9" onclick="DrawHtml(9)"><canvas></canvas></th>
+                    </tr>
+                </table>
+                <div>
+                    <button onclick="Reset()">New Game</button>
+                    <button onclick="PlayBest()">Play Best Move</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
